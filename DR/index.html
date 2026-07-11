@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+С Днём Рождения, любимая тётя 💜
+</title>
+
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+
+<body>
+
+
+<canvas id="particles"></canvas>
+
+
+<div class="overlay"></div>
+
+
+
+
+
+<!-- МУЗЫКА -->
+
+
+<div class="music-player">
+
+
+<audio id="birthdayMusic" loop>
+
+<source src="music.mp3" type="audio/mpeg">
+
+</audio>
+
+
+
+<button id="musicBtn">
+
+🎵 Музыка
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- ГЛАВНЫЙ ЭКРАН -->
+
+
+<section class="hero hidden" id="home">
+
+
+<div class="hero-content">
+
+
+
+<div class="badge">
+
+✨ Особенный день ✨
+
+</div>
+
+
+
+
+<h1>
+
+С Днём Рождения,
+
+<br>
+
+любимая тётя!
+
+</h1>
+
+
+
+
+
+<p>
+
+
+Сегодня тебе исполняется 29 лет 💜
+
+
+<br><br>
+
+
+Пусть этот день будет наполнен
+
+радостью,
+
+улыбками,
+
+теплом родных людей
+
+и самыми красивыми моментами.
+
+
+</p>
+
+
+
+
+
+
+<div class="hero-buttons">
+
+
+
+<a href="#message">
+
+
+<button class="btn primary">
+
+💜 Открыть поздравление
+
+</button>
+
+
+</a>
+
+
+
+<a href="#gallery">
+
+
+<button class="btn secondary">
+
+📸 Смотреть фотографии
+
+</button>
+
+
+</a>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ПОЗДРАВЛЕНИЕ -->
+
+
+<section id="message" class="hidden">
+
+
+<div class="card">
+
+
+
+<h2>
+
+💜 Поздравление
+
+</h2>
+
+
+
+
+<p class="message-text">
+
+
+Любимая тётя!
+
+
+<br><br>
+
+
+От всей души поздравляю тебя
+
+с Днём Рождения!
+
+
+<br><br>
+
+
+Сегодня твой особенный день,
+
+и хочется пожелать тебе
+
+самого главного —
+
+крепкого здоровья,
+
+огромного счастья
+
+и душевного спокойствия.
+
+
+<br><br>
+
+
+Пусть каждый новый день
+
+начинается с улыбки,
+
+пусть рядом всегда будут
+
+любимые и дорогие люди.
+
+
+<br><br>
+
+
+Желаю тебе исполнения всех
+
+самых заветных желаний,
+
+ярких событий,
+
+приятных сюрпризов
+
+и много счастливых моментов.
+
+
+<br><br>
+
+
+Спасибо тебе за твою доброту,
+
+заботу,
+
+поддержку
+
+и тепло,
+
+которое ты даришь окружающим.
+
+
+<br><br>
+
+
+Оставайся такой же красивой,
+
+доброй,
+
+искренней
+
+и замечательной!
+
+
+<br><br>
+
+
+❤️ С Днём Рождения! ❤️
+
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- 29 ЛЕТ -->
+
+
+<section id="age" class="hidden">
+
+
+<div class="card age-card">
+
+
+
+<h2>
+
+🎉 29 лет — 10000 улыбок
+
+</h2>
+
+
+
+
+<div class="age-number">
+
+29
+
+</div>
+
+
+
+
+<p>
+
+
+29 лет — это тысячи счастливых моментов,
+
+сотни добрых воспоминаний
+
+и бесконечное количество улыбок,
+
+которые ты подарила людям вокруг.
+
+
+<br><br>
+
+
+Пусть впереди будет ещё больше
+
+радостных дней,
+
+интересных событий,
+
+приятных встреч
+
+и исполнения самых красивых желаний.
+
+
+<br><br>
+
+
+Пусть каждый новый год твоей жизни
+
+становится ещё счастливее
+
+и ярче.
+
+
+<br><br>
+
+
+✨ Твой новый прекрасный этап только начинается 💜
+
+
+</p>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ГАЛЕРЕЯ -->
+
+
+<section id="gallery" class="hidden">
+
+
+<div class="card">
+
+
+<h2>
+
+📸 Галерея воспоминаний
+
+</h2>
+
+
+
+
+
+<div class="gallery">
+
+
+
+<img src="photos/20140323_220848.jpg"
+onclick="openImg(this.src)">
+
+
+
+<img src="photos/20140323_220949.jpg"
+onclick="openImg(this.src)">
+
+
+
+<img src="photos/20140323_221024.jpg"
+onclick="openImg(this.src)">
+
+
+
+<img src="photos/WhatsApp Image 2026-07-11 at 18.40.11.jpeg"
+onclick="openImg(this.src)">
+
+
+
+<img src="photos/WhatsApp Image 2026-07-11 at 19.07.19 (1).jpeg"
+onclick="openImg(this.src)">
+
+
+
+<img src="photos/WhatsApp Image 2026-07-11 at 19.07.19.jpeg"
+onclick="openImg(this.src)">
+
+
+
+<img src="photos/20140323_221038.jpg"
+onclick="openImg(this.src)">
+
+
+
+<img src="photos/20140323_221259.jpg"
+onclick="openImg(this.src)">
+
+
+
+<img src="photos/1395766124807.jpg"
+onclick="openImg(this.src)">
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ПОЖЕЛАНИЯ -->
+
+
+<section id="wishes" class="hidden">
+
+
+<div class="card">
+
+
+
+<h2>
+
+✨ Самые тёплые пожелания
+
+</h2>
+
+
+
+
+
+<div class="wishes">
+
+
+
+<div class="wish">
+
+💜 Огромной любви и тепла
+
+</div>
+
+
+
+<div class="wish">
+
+🌸 Крепкого здоровья
+
+</div>
+
+
+
+<div class="wish">
+
+⭐ Исполнения всех желаний
+
+</div>
+
+
+
+<div class="wish">
+
+🌙 Душевного спокойствия
+
+</div>
+
+
+
+<div class="wish">
+
+🎉 Больше радостных событий
+
+</div>
+
+
+
+<div class="wish">
+
+💰 Благополучия и достатка
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ТОРТ СО СВЕЧАМИ -->
+
+
+<section id="gift" class="hidden">
+
+
+<div class="card cake-card">
+
+
+
+<h2>
+
+🎂 Загадай желание
+
+</h2>
+
+
+
+
+
+<div class="birthday-cake">
+
+
+
+<div class="candles">
+
+
+
+<div class="candle">
+
+<span class="fire">
+
+🔥
+
+</span>
+
+</div>
+
+
+
+
+<div class="candle">
+
+<span class="fire">
+
+🔥
+
+</span>
+
+</div>
+
+
+
+
+<div class="candle">
+
+<span class="fire">
+
+🔥
+
+</span>
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+<div class="cake-top">
+
+🎂
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<p class="cake-text">
+
+
+Загадай самое доброе желание...
+
+
+<br>
+
+
+А теперь задуй свечи 🕯️
+
+
+</p>
+
+
+
+
+<button
+
+class="btn primary"
+
+onclick="blowCandles()">
+
+
+🕯️ Задуть свечи
+
+
+</button>
+
+
+
+
+<div id="wishMessage">
+
+
+✨ Ваше желание обязательно исполнится 💜
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- ВОЛШЕБНАЯ КНОПКА -->
+
+
+<section id="magic" class="hidden">
+
+
+<div class="card magic-card">
+
+
+
+<h2>
+
+🕯️ Волшебная кнопка
+
+</h2>
+
+
+
+
+<div class="magic-icon">
+
+✨
+
+</div>
+
+
+
+
+<p>
+
+
+Нажмите кнопку,
+
+чтобы отправить
+
+особенное пожелание
+
+и добавить немного магии
+
+в этот день 💜
+
+
+</p>
+
+
+
+
+
+<button
+
+class="btn primary magic-btn"
+
+onclick="magicWish()">
+
+
+
+✨ Исполнить желание
+
+
+</button>
+
+
+
+
+
+
+<div id="magicMessage">
+
+
+💜 Пусть каждый день будет наполнен
+
+счастьем, любовью,
+
+улыбками и прекрасными моментами!
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ФИНАЛЬНАЯ СЦЕНА -->
+
+
+<section id="final" class="hidden">
+
+
+<div class="final-card">
+
+
+
+<div class="final-heart">
+
+💜
+
+</div>
+
+
+
+
+
+<h2>
+
+
+С любовью
+
+для самой лучшей тёти
+
+
+</h2>
+
+
+
+
+
+
+<p>
+
+
+Пусть в твоей жизни всегда будет
+
+место для радости,
+
+мечтаний,
+
+приятных сюрпризов
+
+и счастливых дней.
+
+
+<br><br>
+
+
+Спасибо за твою доброту,
+
+заботу и тепло.
+
+
+<br><br>
+
+
+Пусть все самые красивые желания
+
+обязательно исполняются ✨
+
+
+</p>
+
+
+
+
+
+<div class="final-cake">
+
+🎂
+
+</div>
+
+
+
+
+
+<h3>
+
+С Днём Рождения ❤️
+
+</h3>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+
+
+<footer>
+
+
+💜 Сделано с любовью специально для тебя 💜
+
+
+</footer>
+
+
+
+
+
+
+
+<!-- ОКНО ФОТО -->
+
+
+<div
+
+class="lightbox"
+
+id="lightbox"
+
+onclick="closeImg()">
+
+
+
+<img
+
+id="lightboxImg">
+
+
+
+</div>
+
+
+
+
+
+
+<script src="script.js"></script>
+
+
+
+</body>
+
+
+</html>

@@ -5,8 +5,10 @@
     --secondary:#a855f7;
     --accent:#c084fc;
 
-    --dark:#050505;
-    --dark2:#12081f;
+    --bg:#050505;
+
+    --card:
+    rgba(255,255,255,.06);
 
 }
 
@@ -18,8 +20,6 @@
     padding:0;
 
     box-sizing:border-box;
-
-    scroll-behavior:smooth;
 
 }
 
@@ -37,10 +37,10 @@ body{
 
 
     font-family:
+
     "Segoe UI",
     Arial,
     sans-serif;
-
 
 
     background:
@@ -58,7 +58,6 @@ body{
     );
 
 
-
     color:white;
 
 
@@ -66,6 +65,7 @@ body{
 
 
 }
+
 
 
 
@@ -100,7 +100,6 @@ body{
     inset:0;
 
 
-
     background:
 
     radial-gradient(
@@ -115,14 +114,13 @@ body{
 
             246,
 
-            .18
+            .15
 
         ),
 
         transparent 70%
 
     );
-
 
 
     z-index:-2;
@@ -152,7 +150,7 @@ body{
     bottom:20px;
 
 
-    z-index:5000;
+    z-index:9999;
 
 
 }
@@ -160,6 +158,44 @@ body{
 
 
 #musicBtn{
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+
+    padding:
+
+    14px 24px;
+
+
+    min-width:150px;
+
+
+    border:none;
+
+
+    border-radius:50px;
+
+
+    cursor:pointer;
+
+
+
+    color:white;
+
+
+    font-weight:700;
+
+
+    font-size:15px;
+
 
 
     background:
@@ -176,30 +212,9 @@ body{
 
 
 
-    color:white;
-
-
-    border:none;
-
-
-    padding:
-
-    13px 22px;
-
-
-    border-radius:50px;
-
-
-    cursor:pointer;
-
-
-    font-weight:700;
-
-
-
     box-shadow:
 
-    0 0 20px
+    0 0 25px
 
     rgba(
 
@@ -227,7 +242,9 @@ body{
 
     transform:
 
-    scale(1.08);
+    translateY(-3px)
+
+    scale(1.05);
 
 
 }
@@ -244,7 +261,7 @@ body{
 section{
 
 
-    min-height:auto;
+    width:100%;
 
 
     padding:
@@ -253,6 +270,7 @@ section{
 
 
 }
+
 
 
 
@@ -279,6 +297,9 @@ section{
 
 
 .hero-content{
+
+
+    width:100%;
 
 
     max-width:900px;
@@ -310,7 +331,6 @@ section{
     border-radius:50px;
 
 
-
     background:
 
     rgba(
@@ -321,7 +341,7 @@ section{
 
         246,
 
-        .15
+        .18
 
     );
 
@@ -339,21 +359,17 @@ section{
 
         246,
 
-        .3
+        .35
 
     );
 
 
+
+    color:#e9d5ff;
+
+
 }
 
-
-
-
-
-
-
-
-/* ГЛАВНЫЙ ЗАГОЛОВОК */
 
 
 .hero h1{
@@ -363,17 +379,20 @@ section{
 
     clamp(
 
-        2.8rem,
+        2.5rem,
 
         6vw,
 
-        5rem
+        5.5rem
 
     );
 
 
 
-    color:#d8b4fe;
+    color:#e9d5ff;
+
+
+    line-height:1.15;
 
 
     animation:
@@ -388,45 +407,36 @@ section{
 @keyframes glow{
 
 
-    from{
+from{
 
 
-        text-shadow:
+text-shadow:
 
-        0 0 10px
-
-        #8b5cf6;
+0 0 10px #8b5cf6;
 
 
-    }
+}
 
 
-
-    to{
-
-
-        text-shadow:
-
-        0 0 35px
-
-        #c084fc;
+to{
 
 
-    }
+text-shadow:
+
+0 0 35px #c084fc;
+
+
+}
 
 
 }
 
 
 
+.hero-text{
 
 
-
-
-.hero p{
-
-
-    margin-top:25px;
+    margin-top:30px;
 
 
     font-size:1.2rem;
@@ -435,27 +445,38 @@ section{
     line-height:1.8;
 
 
-    color:#ddd;
+    color:#e5e5e5;
 
 
 }
 
-/* =====================
-   КНОПКИ
-===================== */
+
+
+
+
+/* КНОПКИ */
 
 
 .hero-buttons{
 
+
     margin-top:40px;
+
 
     display:flex;
 
+
     justify-content:center;
+
+
+    align-items:center;
+
 
     gap:20px;
 
+
     flex-wrap:wrap;
+
 
 }
 
@@ -464,21 +485,31 @@ section{
 .btn{
 
 
+    min-width:220px;
+
+
+    min-height:55px;
+
+
     padding:
 
-    15px 35px;
-
-
-    border:none;
+    15px 25px;
 
 
     border-radius:50px;
 
 
+    border:none;
+
+
     cursor:pointer;
 
 
-    font-size:1rem;
+
+    font-size:16px;
+
+
+    font-weight:700;
 
 
     transition:.35s;
@@ -491,7 +522,11 @@ section{
 .primary{
 
 
+    color:white;
+
+
     background:
+
 
     linear-gradient(
 
@@ -504,7 +539,22 @@ section{
     );
 
 
-    color:white;
+    box-shadow:
+
+
+    0 0 25px
+
+    rgba(
+
+        139,
+
+        92,
+
+        246,
+
+        .5
+
+    );
 
 
 }
@@ -514,7 +564,11 @@ section{
 .secondary{
 
 
+    color:white;
+
+
     background:
+
 
     rgba(
 
@@ -524,12 +578,9 @@ section{
 
         255,
 
-        .05
+        .08
 
     );
-
-
-    color:white;
 
 
     border:
@@ -544,7 +595,7 @@ section{
 
         255,
 
-        .3
+        .25
 
     );
 
@@ -558,16 +609,10 @@ section{
 
     transform:
 
+
     translateY(-5px)
 
-    scale(1.05);
-
-
-    box-shadow:
-
-    0 0 30px
-
-    #8b5cf6;
+    scale(1.04);
 
 
 }
@@ -576,14 +621,13 @@ section{
 
 
 
-
-
-/* =====================
-   КАРТОЧКИ
-===================== */
+/* КАРТОЧКИ */
 
 
 .card{
+
+
+    width:100%;
 
 
     max-width:1100px;
@@ -593,15 +637,17 @@ section{
 
 
 
-    padding:40px;
+    padding:
+
+    45px;
 
 
-
-    border-radius:30px;
+    border-radius:35px;
 
 
 
     background:
+
 
     rgba(
 
@@ -617,13 +663,8 @@ section{
 
 
 
-    backdrop-filter:
-
-    blur(15px);
-
-
-
     border:
+
 
     1px solid
 
@@ -641,7 +682,12 @@ section{
 
 
 
+    backdrop-filter:blur(20px);
+
+
+
     box-shadow:
+
 
     0 0 40px
 
@@ -670,18 +716,16 @@ section{
     text-align:center;
 
 
-    color:#d8b4fe;
+    color:#e9d5ff;
 
 
     font-size:2rem;
 
 
-    margin-bottom:30px;
+    margin-bottom:35px;
 
 
 }
-
-
 
 
 
@@ -696,13 +740,20 @@ section{
     text-align:center;
 
 
+    max-width:850px;
+
+
+    margin:auto;
+
+
+
     font-size:1.15rem;
 
 
     line-height:2;
 
 
-    color:#eee;
+    color:#f3f3f3;
 
 
 }
@@ -712,11 +763,7 @@ section{
 
 
 
-
-
-/* =====================
-   29 ЛЕТ
-===================== */
+/* 31 ГОД */
 
 
 .age-card{
@@ -732,55 +779,20 @@ section{
 .age-number{
 
 
-    font-size:8rem;
+    font-size:9rem;
 
 
     font-weight:900;
 
 
-    color:#c084fc;
+    color:#d8b4fe;
 
 
     text-shadow:
 
-    0 0 30px
 
-    #8b5cf6;
+    0 0 40px #8b5cf6;
 
-
-
-    animation:
-
-    numberGlow 3s infinite alternate;
-
-
-}
-
-
-
-@keyframes numberGlow{
-
-
-    from{
-
-
-        transform:
-
-        scale(1);
-
-
-    }
-
-
-    to{
-
-
-        transform:
-
-        scale(1.08);
-
-
-    }
 
 
 }
@@ -790,13 +802,13 @@ section{
 .age-card p{
 
 
-    font-size:1.25rem;
+    font-size:1.2rem;
 
 
-    line-height:2;
+    line-height:1.9;
 
 
-    color:#ddd;
+    color:#eee;
 
 
 }
@@ -806,11 +818,23 @@ section{
 
 
 
+/* ГАЛЕРЕЯ */
 
 
-/* =====================
-   ГАЛЕРЕЯ
-===================== */
+.gallery-text{
+
+
+    text-align:center;
+
+
+    color:#ddd;
+
+
+    margin-bottom:30px;
+
+
+}
+
 
 
 .gallery{
@@ -821,13 +845,14 @@ section{
 
     grid-template-columns:
 
+
     repeat(
 
         auto-fit,
 
         minmax(
 
-            220px,
+            240px,
 
             1fr
 
@@ -836,8 +861,7 @@ section{
     );
 
 
-
-    gap:20px;
+    gap:25px;
 
 
 }
@@ -850,17 +874,16 @@ section{
     width:100%;
 
 
-    height:280px;
+    height:300px;
 
 
     object-fit:cover;
 
 
-    border-radius:20px;
+    border-radius:25px;
 
 
     cursor:pointer;
-
 
 
     transition:.4s;
@@ -878,12 +901,9 @@ section{
     scale(1.05);
 
 
-
     box-shadow:
 
-    0 0 30px
-
-    #8b5cf6;
+    0 0 30px #8b5cf6;
 
 
 }
@@ -894,11 +914,7 @@ section{
 
 
 
-
-
-/* =====================
-   ПОЖЕЛАНИЯ
-===================== */
+/* ПОЖЕЛАНИЯ */
 
 
 .wishes{
@@ -909,13 +925,14 @@ section{
 
     grid-template-columns:
 
+
     repeat(
 
         auto-fit,
 
         minmax(
 
-            220px,
+            230px,
 
             1fr
 
@@ -936,33 +953,34 @@ section{
 .wish{
 
 
-    padding:25px;
+    padding:30px 20px;
 
 
     text-align:center;
 
 
-    border-radius:20px;
-
+    border-radius:25px;
 
 
     background:
 
+
     rgba(
 
-        139,
+        255,
 
-        92,
+        255,
 
-        246,
+        255,
 
-        .12
+        .06
 
     );
 
 
 
     border:
+
 
     1px solid
 
@@ -974,10 +992,16 @@ section{
 
         246,
 
-        .3
+        .25
 
     );
 
+
+
+    font-size:1.05rem;
+
+
+    line-height:1.5;
 
 
     transition:.3s;
@@ -992,27 +1016,36 @@ section{
 
     transform:
 
-    translateY(-5px);
+    translateY(-8px);
+
+
+    box-shadow:
+
+
+    0 0 25px #8b5cf6;
 
 
 }
 
 
-
-
-
-
-
-/* =====================
-   ТОРТ
-===================== */
+/* ТОРТ */
 
 
 .cake-card{
 
-
     text-align:center;
 
+}
+
+
+
+.cake-text{
+
+    color:#eee;
+
+    font-size:1.2rem;
+
+    line-height:1.8;
 
 }
 
@@ -1020,15 +1053,13 @@ section{
 
 .birthday-cake{
 
+    margin:40px auto;
 
     position:relative;
 
+    width:220px;
 
-    margin:40px auto;
-
-
-    width:260px;
-
+    height:180px;
 
 }
 
@@ -1036,32 +1067,21 @@ section{
 
 .cake-top{
 
+    position:absolute;
 
-    font-size:120px;
+    bottom:0;
 
+    width:100%;
 
-    animation:
+    font-size:8rem;
 
-    cakeMove 3s infinite;
+    filter:
 
+    drop-shadow(
 
-}
+        0 0 20px #8b5cf6
 
-
-
-@keyframes cakeMove{
-
-
-    50%{
-
-
-        transform:
-
-        translateY(-12px);
-
-
-    }
-
+    );
 
 }
 
@@ -1069,27 +1089,19 @@ section{
 
 .candles{
 
-
     position:absolute;
 
+    top:0;
 
-    top:-15px;
-
-
-    left:0;
-
-
-    right:0;
-
+    width:100%;
 
     display:flex;
 
-
     justify-content:center;
-
 
     gap:25px;
 
+    z-index:2;
 
 }
 
@@ -1097,18 +1109,7 @@ section{
 
 .candle{
 
-
-    width:12px;
-
-
-    height:45px;
-
-
-    background:white;
-
-
-    border-radius:5px;
-
+    font-size:35px;
 
 }
 
@@ -1116,37 +1117,31 @@ section{
 
 .fire{
 
-
-    display:block;
-
-
-    margin-top:-35px;
-
-
-    font-size:25px;
-
-
     animation:
 
-    fire 1s infinite;
-
+    flame 1s infinite alternate;
 
 }
 
 
 
-@keyframes fire{
+@keyframes flame{
 
 
-    50%{
+from{
+
+    transform:scale(1);
+
+}
 
 
-        transform:
+to{
 
-        scale(1.3);
+    transform:
 
+    scale(1.2);
 
-    }
+}
 
 
 }
@@ -1162,22 +1157,58 @@ section{
     margin-top:30px;
 
 
+    color:#e9d5ff;
+
+
     font-size:1.4rem;
 
 
-    color:#d8b4fe;
+    animation:
+
+    fadeIn 1s;
 
 
 }
 
-/* =====================
-   ВОЛШЕБНАЯ КНОПКА
-===================== */
+
+
+@keyframes fadeIn{
+
+
+from{
+
+opacity:0;
+
+transform:scale(.8);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+
+}
+
+
+
+
+
+
+
+/* ВОЛШЕБНАЯ КНОПКА */
 
 
 .magic-card{
 
+
     text-align:center;
+
 
 }
 
@@ -1186,7 +1217,7 @@ section{
 .magic-icon{
 
 
-    font-size:80px;
+    font-size:90px;
 
 
     margin:25px;
@@ -1194,157 +1225,79 @@ section{
 
     animation:
 
-    magicFloat 3s infinite;
+    pulse 2s infinite;
 
 
 }
 
 
 
-@keyframes magicFloat{
+@keyframes pulse{
 
 
-    50%{
+50%{
 
+transform:
 
-        transform:
+scale(1.15);
 
-        translateY(-15px)
-
-        rotate(10deg);
-
-
-    }
+}
 
 
 }
 
 
 
-.magic-btn{
+.magic-card p{
 
 
-    position:relative;
+    font-size:1.2rem;
 
 
-    overflow:hidden;
+    line-height:1.8;
 
 
-}
-
-
-
-.magic-btn::after{
-
-
-    content:"";
-
-
-    position:absolute;
-
-
-    inset:0;
-
-
-    background:
-
-    linear-gradient(
-
-        120deg,
-
-        transparent,
-
-        rgba(
-
-            255,
-
-            255,
-
-            255,
-
-            .5
-
-        ),
-
-        transparent
-
-    );
-
-
-    transform:
-
-    translateX(-100%);
+    color:#eee;
 
 
 }
 
-
-
-.magic-btn:hover::after{
-
-
-    transform:
-
-    translateX(100%);
-
-
-    transition:.7s;
-
-
-}
 
 
 
 #magicMessage{
 
 
-    display:none;
-
-
-    margin-top:30px;
-
-
-    font-size:1.4rem;
+    margin-top:25px;
 
 
     color:#d8b4fe;
 
 
-}
-
-
-
-
-
-
-
-
-
-/* =====================
-   ФИНАЛ
-===================== */
-
-
-#final{
-
-
-    display:flex;
-
-
-    justify-content:center;
+    font-size:1.4rem;
 
 
 }
 
+
+
+
+
+
+
+/* ФИНАЛ */
 
 
 .final-card{
 
 
-    max-width:850px;
+    max-width:900px;
 
 
-    padding:60px;
+    margin:auto;
+
+
+    padding:50px;
 
 
     text-align:center;
@@ -1354,20 +1307,25 @@ section{
     border-radius:40px;
 
 
-
     background:
 
     rgba(
 
-        20,
+        255,
 
-        10,
+        255,
 
-        40,
+        255,
 
-        .65
+        .05
 
     );
+
+
+
+    backdrop-filter:
+
+    blur(20px);
 
 
 
@@ -1389,23 +1347,6 @@ section{
 
 
 
-    box-shadow:
-
-    0 0 60px
-
-    rgba(
-
-        139,
-
-        92,
-
-        246,
-
-        .35
-
-    );
-
-
 }
 
 
@@ -1413,30 +1354,12 @@ section{
 .final-heart{
 
 
-    font-size:100px;
+    font-size:90px;
 
 
     animation:
 
-    heartBeat 2s infinite;
-
-
-}
-
-
-
-@keyframes heartBeat{
-
-
-    50%{
-
-
-        transform:
-
-        scale(1.2);
-
-
-    }
+    pulse 2s infinite;
 
 
 }
@@ -1446,10 +1369,13 @@ section{
 .final-card h2{
 
 
-    font-size:2.8rem;
+    color:#e9d5ff;
 
 
-    color:#d8b4fe;
+    font-size:2.3rem;
+
+
+    margin:20px 0;
 
 
 }
@@ -1457,9 +1383,6 @@ section{
 
 
 .final-card p{
-
-
-    margin-top:25px;
 
 
     font-size:1.2rem;
@@ -1475,93 +1398,10 @@ section{
 .final-cake{
 
 
-    font-size:100px;
+    margin-top:30px;
 
 
-    margin:30px;
-
-
-}
-
-
-
-
-
-
-
-
-/* =====================
-   ПАДАЮЩИЕ ОБЪЕКТЫ
-===================== */
-
-
-.fall-item{
-
-
-    position:fixed;
-
-
-    top:-60px;
-
-
-    z-index:9999;
-
-
-    pointer-events:none;
-
-
-    user-select:none;
-
-
-    filter:
-
-    drop-shadow(
-
-        0 0 12px
-
-        #8b5cf6
-
-    );
-
-
-}
-
-
-
-@keyframes fall{
-
-
-    from{
-
-
-        transform:
-
-        translateY(-60px)
-
-        rotate(0deg);
-
-
-        opacity:1;
-
-
-    }
-
-
-
-    to{
-
-
-        transform:
-
-        translateY(110vh)
-
-        rotate(360deg);
-
-
-        opacity:0;
-
-
-    }
+    font-size:80px;
 
 
 }
@@ -1572,9 +1412,7 @@ section{
 
 
 
-/* =====================
-   LIGHTBOX
-===================== */
+/* LIGHTBOX */
 
 
 .lightbox{
@@ -1637,9 +1475,8 @@ section{
 
 
 
-/* =====================
-   ПОЯВЛЕНИЕ
-===================== */
+
+/* ПОЯВЛЕНИЕ */
 
 
 .hidden{
@@ -1650,12 +1487,12 @@ section{
 
     transform:
 
-    translateY(40px);
+    translateY(60px);
 
 
     transition:
 
-    0.8s;
+    1s;
 
 
 }
@@ -1685,7 +1522,7 @@ footer{
     text-align:center;
 
 
-    padding:40px;
+    padding:40px 20px;
 
 
     color:#ccc;
@@ -1699,194 +1536,220 @@ footer{
 
 
 
-
-
-/* =====================
-   ПК ОПТИМИЗАЦИЯ
-===================== */
-
-
-@media(min-width:1200px){
-
-
-
-    section{
-
-
-        padding-left:80px;
-
-        padding-right:80px;
-
-
-    }
-
-
-}
-
-
-
-
-
-
-
-
-
-/* =====================
-   ТЕЛЕФОН
-===================== */
+/* МОБИЛЬНАЯ ВЕРСИЯ */
 
 
 @media(max-width:768px){
 
 
 
-    section{
+section{
 
 
-        padding:
+    padding:
 
-        45px 15px;
+    45px 12px;
 
 
-    }
+}
 
 
 
+.hero{
 
-    .card{
 
+    min-height:100vh;
 
-        padding:25px;
 
+}
 
-        border-radius:22px;
 
 
-    }
+.hero h1{
 
 
+    font-size:
 
+    2.5rem;
 
-    .hero h1{
 
+}
 
-        font-size:2.5rem;
 
 
-    }
+.hero-text{
 
 
+    font-size:1rem;
 
 
-    .hero p{
+    line-height:1.7;
 
 
-        font-size:1rem;
+}
 
 
-    }
 
+.hero-buttons{
 
 
+    flex-direction:column;
 
-    .btn{
 
+    width:100%;
 
-        width:100%;
 
+}
 
-        max-width:320px;
 
 
-    }
+.btn{
 
 
+    width:100%;
 
 
-    .age-number{
+    max-width:330px;
 
 
-        font-size:5rem;
+}
 
 
-    }
 
+.card{
 
 
+    padding:25px 18px;
 
-    .gallery{
 
+    border-radius:25px;
 
-        grid-template-columns:
 
-        repeat(
+}
 
-            2,
 
-            1fr
 
-        );
+.card h2{
 
 
-    }
+    font-size:1.5rem;
 
 
+}
 
 
-    .gallery img{
 
+.message-text{
 
-        height:170px;
 
+    font-size:1rem;
 
-    }
 
+    line-height:1.8;
 
 
+}
 
 
-    .final-card{
 
+.age-number{
 
-        padding:35px 20px;
 
+    font-size:6rem;
 
-    }
 
+}
 
 
 
-    .final-card h2{
+.gallery{
 
 
-        font-size:2rem;
+    grid-template-columns:
 
 
-    }
+    1fr;
 
 
+}
 
 
-    .final-heart{
 
+.gallery img{
 
-        font-size:70px;
 
+    height:260px;
 
-    }
 
+}
 
 
 
-    .birthday-cake{
+.wishes{
 
 
-        transform:
+    grid-template-columns:
 
-        scale(.8);
+    1fr;
 
 
-    }
+}
+
+
+
+.music-player{
+
+
+    right:12px;
+
+
+    bottom:12px;
+
+
+}
+
+
+
+#musicBtn{
+
+
+    min-width:120px;
+
+
+    padding:12px 18px;
+
+
+}
+
+
+
+.final-card{
+
+
+    padding:30px 20px;
+
+
+}
+
+
+
+.final-card h2{
+
+
+    font-size:1.7rem;
+
+
+}
+
+
+
+.final-card p{
+
+
+    font-size:1rem;
+
+
+}
 
 
 
@@ -1894,34 +1757,37 @@ footer{
 
 
 
+@media(max-width:380px){
 
 
 
-/* слабые устройства */
+.hero h1{
 
 
-@media(max-width:480px){
+font-size:2.1rem;
 
 
-
-    #particles{
-
-
-        opacity:.5;
-
-
-    }
+}
 
 
 
-
-    .fall-item{
-
-
-        font-size:20px!important;
+.age-number{
 
 
-    }
+font-size:5rem;
+
+
+}
+
+
+
+.cake-top{
+
+
+font-size:6rem;
+
+
+}
 
 
 
